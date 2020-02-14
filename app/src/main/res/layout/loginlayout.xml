@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:onClick="loginRootLayout"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/signUpSwitchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="34dp"
+        android:background="@android:color/background_dark"
+        android:gravity="left|center_vertical"
+        android:text="SignUp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="50dp"
+        android:text="Don't have an account?"
+        android:textColor="#dbdbdb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signUpSwitchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="#3b3bff"
+        android:text="Login"
+        android:textColor="#dbdbdb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpasswordField" />
+
+    <EditText
+        android:id="@+id/loginpasswordField"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="#3e3e3e"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:textColorHint="#dbdbdb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemailField" />
+
+    <EditText
+        android:id="@+id/loginemailField"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="#3e3e3e"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textPersonName"
+        android:textColor="#efefef"
+        android:textColorHint="#dbdbdb"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="186dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Instagram"
+        android:textColor="@android:color/background_light"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
